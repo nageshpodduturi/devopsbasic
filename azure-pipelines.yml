@@ -26,6 +26,6 @@ steps:
     TargetFolder: '$(Agent.BuildDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Agent.BuildDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
